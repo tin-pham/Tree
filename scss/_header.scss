@@ -1,0 +1,143 @@
+@import './config';
+
+header {
+  width: 100%;
+  height: auto;
+  padding: 1em 0.5em;
+  background: rgba(0, 0, 0, 0.5);
+
+  position: fixed;
+  z-index: 1;
+  @include flex(space-between, center);
+  flex-direction: row;
+
+  //   Logo
+
+  ion-icon {
+    font-size: 3rem;
+    color: white;
+    position: relative;
+    cursor: pointer;
+
+    transition: all 300ms ease;
+    &:hover {
+      color: $green-lighter;
+      transform: rotate(-90deg);
+    }
+  }
+
+  .close {
+    display: none;
+  }
+
+  //   Nav stuff
+  nav {
+    ul {
+      //   display: none;
+      position: absolute;
+      list-style-type: none;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      max-height: 0px;
+      transform: translateY(100%);
+      transition: all 600ms ease;
+      overflow: hidden;
+
+      li {
+        width: inherit;
+        // background: red;
+        text-align: center;
+
+        a {
+          text-decoration: none;
+          text-transform: uppercase;
+          background: hsl(330, 10%, 7%);
+          width: inherit;
+          display: block;
+          padding: 1em;
+          color: white;
+          font-size: 1.75rem;
+          font-weight: bold;
+          letter-spacing: 0.25rem;
+          &:hover {
+            background: $green;
+            color: white;
+          }
+        }
+      }
+    }
+
+    &.active {
+      ul {
+        max-height: 1000px;
+        transition: all 600ms ease;
+      }
+
+      .menu {
+        display: none;
+      }
+
+      .close {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+header.white {
+  background: #edf6f9;
+  transition: all 200ms ease;
+  * {
+    color: $green-darker;
+  }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+  header {
+    nav {
+      .menu {
+        display: none;
+      }
+      ul {
+        all: unset;
+        display: flex;
+        list-style-type: none;
+        li {
+          position: relative;
+
+          a {
+            background: transparent !important;
+            font-size: 1.25rem;
+            position: relative;
+            transition: all 300ms ease-in-out;
+            &:hover {
+              color: $green;
+            }
+            &::before {
+              content: '';
+              z-index: 1;
+              width: 80%;
+              height: 2.5px;
+              border-radius: 20px;
+              background: white;
+              position: absolute;
+              bottom: 15px;
+              left: 20px;
+              transform: scaleX(0);
+
+              transition: all 300ms ease-in-out;
+              transform-origin: left;
+            }
+
+            &:hover::before {
+              transform: scaleX(50%);
+              background: $green;
+            }
+          }
+        }
+      }
+    }
+  }
+}

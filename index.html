@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vì Rừng</title>
+    <link rel="icon" href="./image/icon.png" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="loader">
+      <img src="./image/spinner.gif" alt="Loading..." />
+    </div>
+
+    <header>
+      <ion-icon name="cloudy-night-outline" class="logo"></ion-icon>
+
+      <nav>
+        <ion-icon name="menu-outline" class="menu"></ion-icon>
+        <ion-icon name="close-outline" class="close"></ion-icon>
+        <ul class="nav-list">
+          <li><a href="#home">Trang chủ</a></li>
+          <li><a href="#about">Về chúng tôi</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="home">
+      <h1>Rừng xanh</h1>
+      <p>Hãy đóng góp vì một bầu không khí ngày mai</p>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about__title">
+        <h1>Hãy cùng tôi khám phá</h1>
+      </div>
+
+      <div class="about__box">
+        <div class="box">
+          <ion-icon name="leaf" class="box__icon"></ion-icon>
+          <h2 class="box__title">Oxy</h2>
+          <p class="box__content">Cây xanh là nguồn cung cấp oxy cho con người</p>
+        </div>
+
+        <div class="box box--special">
+          <ion-icon name="nuclear" class="box__icon"></ion-icon>
+          <h2 class="box__title">Biến đổi khí hậu</h2>
+          <p class="box__content">
+            Sau khi cháy rừng ở Úc và Brazil đã cảnh báo cho con người về ảnh hưởng rất lớn của rừng đối với nguồn không khí trong lành, chúng ta cần
+            hành động ngay
+          </p>
+        </div>
+
+        <div class="box">
+          <ion-icon name="pricetag" class="box__icon"></ion-icon>
+          <h2 class="box__title">Support</h2>
+          <p class="box__content">Chúng tôi cần sự giúp đỡ của bạn, dù là nhỏ nhất, nhưng tất cả đều có ý nghĩa góp phần xây dựng nên tương lai</p>
+        </div>
+      </div>
+    </section>
+
+    <article class="article article--oxy">
+      <img src="./image/oxy.svg" alt="oxy" />
+
+      <div class="oxy__content">
+        <h2>Bầu không khí trong lành</h2>
+
+        <p>
+          Oxy góp phần tạo nên một môi trường trong lành, vì thế ở những nơi làng quê, bạn sẽ cảm thấy dễ chịu hơn so với thành thị, đặc biệt ở những
+          vùng nông thôn.
+        </p>
+
+        <blockquote>
+          <p class="blockquote__p">
+            "Phần còn lại của thế giới có thể tiếp tục sống mà không có chúng ta, nhưng chúng ta không thể tồn tại nếu thiếu đi chúng”.
+            <cite><a href="https://en.wikipedia.org/wiki/Sylvia_Earle" target="_blank">Sylvia A. Earle </a> </cite>
+          </p>
+        </blockquote>
+
+        <p>
+          Cây xanh sẽ quang hợp, cung cấp oxy vào mỗi buổi sáng. Do đó, mỗi sáng thức dậy sớm ra ngoài thể dục và hít thở bầu không khí trong lành do
+          thiên nhiên ban tặng thì còn gì bằng.
+        </p>
+      </div>
+    </article>
+
+    <hr />
+
+    <article class="article article--temp">
+      <div class="temp__first">
+        <img src="./image/fire.svg" alt="Forest in Fire" />
+
+        <div class="temp__content">
+          <h2>Cháy rừng</h2>
+          <p>
+            Trong vài năm qua, cháy rừng xảy ra rất nhiều. Một phần là do con người, sinh vật, nhiệt độ cao, đôi khi những nguyên nhân vô cùng nhỏ,
+            nhưng để lại hậu quả rất lớn.
+          </p>
+
+          <p><a href="https://www.ncdc.noaa.gov/sotc/fire/202103">Thống kê cho thấy có khoảng 10.000 vụ cháy trong năm 2021 nói riêng</a></p>
+        </div>
+      </div>
+
+      <div class="temp__second">
+        <img src="./image/temp.svg" alt="Climate Change" />
+
+        <div class="temp__content">
+          <h2>Biến đổi khí hậu</h2>
+          <p>
+            Một trong các vấn đề đã lâu và vẫn đang tiếp diễn là tình trạng biến đổi khí hậu, nóng lên toàn cầu. Gây
+            <a href="https://haku.vn/hau-qua-cua-bien-doi-khi-hau/">ảnh hưởng</a> rất nhiều đến con người và xã hội.
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <section class="support">
+      <img src="./image/support.svg" alt="Support" />
+      <div class="support__content">
+        <h2>Support</h2>
+        <p>Chúng tôi cần sự giúp đỡ của bạn, vì một bầu trời và một khu rừng trong xanh.</p>
+        <form action="#">
+          <div>
+            <input type="radio" id="1" name="money" value="1" />
+            <label for="1">1</label>
+          </div>
+
+          <div>
+            <input type="radio" id="2" name="money" value="2" />
+            <label for="2">2</label>
+          </div>
+
+          <div>
+            <input type="radio" id="5" name="money" value="5" />
+            <label for="5">5</label>
+          </div>
+
+          <div>
+            <input type="radio" id="10" name="money" value="10" />
+            <label for="10">10</label>
+          </div>
+
+          <div>
+            <input type="radio" id="20" name="money" value="20" />
+            <label for="20">20</label>
+          </div>
+
+          <div>
+            <input type="radio" id="50" name="money" value="50" />
+            <label for="50">50</label>
+          </div>
+
+          <button type="submit" id="send__money">Gửi</button>
+        </form>
+
+        <div class="support__money">
+          <h3>Số tiền đã được ủng hộ</h3>
+          <p id="money">0</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

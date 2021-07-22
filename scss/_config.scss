@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+@font-face {
+  font-family: 'Molle';
+  src: local('Molle'), url(https://fonts.gstatic.com/s/molle/v11/E21n_dL5hOXFhWEsbz8sVg.woff2) format('woff2');
+  unicode-range: U+0042, U+0043, U+0053;
+}
+
+$josefin: 'Josefin Sans', sans-serif;
+$molle: Molle, cursive;
+
+$green-darker: hsl(175, 100%, 5%);
+$green: hsl(175, 100%, 35%);
+$green-lighter: hsl(175, 100%, 42%);
+$green-white: rgb(237, 246, 249);
+
+$blue: #157bcd;
+
+$breakpoint-tablet: 769px;
+$breakpoint-desktop: 1200px;
+
+@mixin flex($justify, $align) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  font-family: $josefin;
+}
+
+button {
+  cursor: pointer;
+}
+
+article a {
+  cursor: help;
+}

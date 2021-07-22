@@ -1,0 +1,50 @@
+@import '../config';
+
+.article--temp {
+  background-color: $green-darker;
+  color: white;
+
+  p {
+    &::first-letter {
+      font-size: 2rem;
+    }
+    a {
+      color: inherit;
+    }
+  }
+
+  .temp__first {
+    h2 {
+      text-align: right;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+  .article--temp {
+    flex-direction: column;
+    .temp__first,
+    .temp__second {
+      @include flex(center, center);
+      flex-direction: row;
+    }
+
+    .temp__first {
+      .temp__content {
+        order: -1;
+        h2 {
+          text-align: left;
+          left: 30px;
+        }
+      }
+    }
+
+    .temp__second {
+      .temp__content {
+        h2 {
+          left: 10px;
+        }
+      }
+    }
+  }
+}

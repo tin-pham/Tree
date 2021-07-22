@@ -1,0 +1,47 @@
+@import '../config';
+
+.loader {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //   transition: opacity 300ms ease-out;
+  img {
+    width: 30%;
+  }
+}
+
+.loader.hide {
+  animation: fadeOut 2000ms forwards;
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+  .loader {
+    img {
+      width: 15%;
+    }
+  }
+}
+
+@keyframes fadeOut {
+  33% {
+    opacity: 0.7;
+  }
+
+  66% {
+    opacity: 0.3;
+  }
+
+  to {
+    opacity: 0;
+    z-index: -99;
+  }
+}
