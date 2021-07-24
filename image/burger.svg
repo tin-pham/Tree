@@ -11,9 +11,7 @@
  svg:hover .cls-1{
         fill: hsl(175, 100%, 40%)
     }
-    /* .cls-1:hover{
-        fill: hsl(175, 100%, 65%) !important;
-    } */
-   
+
+
 </style>
 </defs><title/><path class="cls-1" d="M3,9H29a2,2,0,0,0,0-4H3A2,2,0,0,0,3,9Z"/><path class="cls-1" d="M29,14H3a2,2,0,0,0,0,4H29a2,2,0,0,0,0-4Z"/><path class="cls-1" d="M29,23H3a2,2,0,0,0,0,4H29a2,2,0,0,0,0-4Z"/></svg>
