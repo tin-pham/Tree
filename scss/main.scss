@@ -1,6 +1,6 @@
-@import './config', './header', './home', './about', './article/article', './article/oxy', './article/temp', './support';
+@import './config', './header', './home', './about', './article/article', './article/oxy', './article/temp', './support', './footer';
 
-@import './beside/loader';
+@import './beside/loader', './beside/popup';
 
 html {
   scroll-behavior: smooth;

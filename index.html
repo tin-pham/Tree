@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/main.css" />
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
     <script src="./script.js" defer></script>
   </head>
   <body>
@@ -25,7 +26,7 @@
         <ul class="nav-list">
           <li><a href="#home">Trang chủ</a></li>
           <li><a href="#about">Về chúng tôi</a></li>
-          <li><a href="#">Shop</a></li>
+          <li><a href="#">Ủng hộ</a></li>
           <li><a href="#">Liên hệ</a></li>
         </ul>
       </nav>
@@ -165,5 +166,35 @@
         </div>
       </div>
     </section>
+
+    <div class="popup">
+      <div class="container">
+        <p>Thank you for <span id="amount"></span></p>
+        <ion-icon name="close-circle" id="close"></ion-icon>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__main">
+        <div class="footer__content">
+          <ion-icon name="cloudy-night-outline" class="logo"></ion-icon>
+          <p>
+            Cảm ơn các bạn đã dành thời gian xem dự án của mình, nếu có đóng góp ý kiến cho mình bạn có thể liên hệ mình bằng những đường link cạnh
+            bên ^^
+          </p>
+        </div>
+        <div class="footer__contact">
+          <h3>Liên hệ</h3>
+          <a href="0965599132" target="_blank"><img src="./image/zalo.svg" alt="Zalo" /></a>
+          <a href="https://www.facebook.com/joseph.webdev" target="_blank"><img src="./image/facebook.svg" alt="Facebook" /></a>
+          <a href="https://www.reddit.com/user/minercreep" target="_blank"><img src="./image/reddit.svg" alt="Reddit" /></a>
+        </div>
+      </div>
+      <div class="footer__footer">
+        <p>
+          <small>&copy; Copyright <time></time> TinPham. All Rights Reserved</small>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

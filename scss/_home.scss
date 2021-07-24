@@ -6,20 +6,25 @@
   min-height: 100vh;
   position: relative;
   border-radius: 0 0 50px 0;
-
   @include center;
 
-  &::before {
+  &::before,
+  &::after {
     content: '';
-    background: black url(../image/home-1024x768.jpg) center center / cover no-repeat;
-    // background-attachment: fixed;
-
     width: 100%;
     min-height: 100vh;
-    filter: blur(5px) hue-rotate(100deg);
-
     position: absolute;
     z-index: -1;
+  }
+
+  &::before {
+    background: $green-darker url(../image/home-1024x768.jpg) center center / cover no-repeat;
+    filter: hue-rotate(100deg);
+  }
+
+  &::after {
+    background: linear-gradient(to bottom, $green-darker, $green);
+    opacity: 0.3;
   }
 
   h1 {

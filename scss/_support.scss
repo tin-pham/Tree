@@ -3,6 +3,19 @@
 .support {
   text-align: center;
   padding: 2em;
+
+  &__content {
+    h2 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.25rem;
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+
   form {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -17,12 +30,13 @@
 
   label {
     display: inline-block;
-    width: 100px;
+    width: 130px;
     border: 1px solid black;
     border-radius: 2px;
     text-align: center;
     padding: 0.75em;
     grid-area: m;
+    font-size: 1.25rem;
     cursor: pointer;
     &::after {
       content: '$';
@@ -42,13 +56,13 @@
 
   button[type='submit'] {
     grid-area: b;
-    padding: 0.5em;
+    padding: 0.5em 1.25em;
     background: $green;
     color: white;
     font-weight: bold;
-    width: 100px;
+    // width: 100px;
     text-transform: uppercase;
-    font-size: 1.25rem;
+    font-size: 2.25rem;
     border-radius: 10px;
     letter-spacing: 3px;
     border: none;
@@ -57,13 +71,13 @@
   &__money {
     h3 {
       font-size: 2rem;
+      margin-bottom: 1rem;
     }
 
     p {
       font-size: 3rem;
-      padding: 0.5em 0.5em;
-      border: 2px solid black;
-      width: 40%;
+      border-bottom: 2px solid black;
+      width: 20%;
       margin: 0 auto;
       &::after {
         content: '$';

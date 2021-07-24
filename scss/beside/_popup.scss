@@ -1,0 +1,56 @@
+@import '../config';
+
+.popup {
+  position: fixed;
+  min-height: 100vh;
+  visibility: hidden;
+  transition: all 300ms ease;
+  .container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+
+    transition: all 300ms ease;
+    background: white;
+    width: 400px;
+    height: 250px;
+    font-size: 2rem;
+    border-radius: 5px;
+    @include flex(center, center);
+    #close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      cursor: pointer;
+      &:hover {
+        color: hsl(0, 0%, 30%);
+      }
+    }
+
+    #amount {
+      &::after {
+        content: '$';
+      }
+    }
+  }
+
+  &::before {
+    content: '';
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+.popup.show {
+  visibility: visible;
+  .container {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
