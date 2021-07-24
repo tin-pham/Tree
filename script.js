@@ -24,25 +24,22 @@ function navToggle() {
 navToggle();
 
 /* -------------------------------------- */
+const homeHeight = document.getElementById('home').getBoundingClientRect().height;
+
+const header = document.querySelector('header');
 
 function navColorChange() {
-  const homeHeight = document.getElementById('home').getBoundingClientRect().height;
-
-  const header = document.querySelector('header');
-
-  function headerDeal() {
-    /* * 
+  /* * 
     ? Nav Bar change color when the scroll height >= the initial home height - 120 (contain the about us header height, so the effect will be better) 
      */
-    if (window.scrollY >= homeHeight - 120) {
-      header.classList.add('white');
-    } else {
-      header.classList.remove('white');
-    }
+  if (window.scrollY >= homeHeight - 120) {
+    header.classList.add('white');
+  } else {
+    header.classList.remove('white');
   }
-
-  window.addEventListener('scroll', headerDeal);
 }
+
+window.addEventListener('scroll', navColorChange);
 /*
  * * Color Nav Bar Toggle
 
