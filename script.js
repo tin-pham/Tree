@@ -44,7 +44,7 @@ window.addEventListener('scroll', navColorChange);
  * * Color Nav Bar Toggle
 
  */
-navColorChange();
+// navColorChange();
 
 /* -------------------------------------- */
 
