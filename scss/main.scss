@@ -26,3 +26,13 @@ body {
   border-radius: 10px;
   background: hsla(175, 100%, 5%, 0.8);
 }
+
+#contact:target {
+  animation: highlight 200ms 2;
+}
+
+@keyframes highlight {
+  to {
+    transform: scale(1.02);
+  }
+}

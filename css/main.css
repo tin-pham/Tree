@@ -1211,4 +1211,23 @@ body {
   border-radius: 10px;
   background: rgba(0, 26, 23, 0.8);
 }
+
+#contact:target {
+  -webkit-animation: highlight 200ms 2;
+          animation: highlight 200ms 2;
+}
+
+@-webkit-keyframes highlight {
+  to {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+}
+
+@keyframes highlight {
+  to {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+}
 /*# sourceMappingURL=main.css.map */
