@@ -6,7 +6,7 @@
 
   background: $green-darker url(../image/rain-1024x768.jpg) center center / cover no-repeat;
   color: rgba(255, 255, 255, 0.7);
-  z-index: 1;
+  z-index: 0;
   text-align: justify;
   &::before {
     content: '';

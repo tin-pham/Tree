@@ -2,7 +2,7 @@
 
 .support {
   text-align: center;
-  padding: 2em;
+  padding: 1em;
 
   &__content {
     h2 {
@@ -11,7 +11,7 @@
 
     p {
       font-size: 1.25rem;
-      width: 70%;
+      width: 90%;
       margin: 0 auto;
     }
   }
@@ -30,7 +30,7 @@
 
   label {
     display: inline-block;
-    width: 130px;
+    width: 70px;
     border: 1px solid black;
     border-radius: 2px;
     text-align: center;
@@ -69,6 +69,7 @@
   }
 
   &__money {
+    position: relative;
     h3 {
       font-size: 2rem;
       margin-bottom: 1rem;
@@ -79,6 +80,8 @@
       border-bottom: 2px solid black;
       width: 20%;
       margin: 0 auto;
+      position: relative;
+      left: -25px;
       &::after {
         content: '$';
       }

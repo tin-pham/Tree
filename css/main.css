@@ -744,7 +744,7 @@ article a {
 
 .support {
   text-align: center;
-  padding: 2em;
+  padding: 1em;
 }
 
 .support__content h2 {
@@ -753,7 +753,7 @@ article a {
 
 .support__content p {
   font-size: 1.25rem;
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -770,7 +770,7 @@ article a {
 
 .support label {
   display: inline-block;
-  width: 130px;
+  width: 70px;
   border: 1px solid black;
   border-radius: 2px;
   text-align: center;
@@ -814,6 +814,10 @@ article a {
   border: none;
 }
 
+.support__money {
+  position: relative;
+}
+
 .support__money h3 {
   font-size: 2rem;
   margin-bottom: 1rem;
@@ -824,6 +828,8 @@ article a {
   border-bottom: 2px solid black;
   width: 20%;
   margin: 0 auto;
+  position: relative;
+  left: -25px;
 }
 
 .support__money p::after {
@@ -899,7 +905,7 @@ article a {
   min-height: 30vh;
   background: #001a17 url(../image/rain-1024x768.jpg) center center/cover no-repeat;
   color: rgba(255, 255, 255, 0.7);
-  z-index: 1;
+  z-index: 0;
   text-align: justify;
 }
 
@@ -1183,6 +1189,12 @@ article a {
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 7rem;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
 }
 
 ::-webkit-scrollbar {
